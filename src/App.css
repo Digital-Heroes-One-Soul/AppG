@@ -1,38 +1,47 @@
-.App {
+.start{
+display: grid;
+grid-template-columns: 50% 50%;
+grid-template-rows: 50% 50%; 
+background-color: antiquewhite;
+
+}
+.body-form{
+  width: 30%;
+  height: 50%;
   text-align: center;
+
+}
+.canvas-sty{
+background-color: #61dafb;
+height: 20px;
+width: fit-content;
+border: green  3px inset;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.personal-info-form{
+  padding: 20%;
+  border-left-color: aqua 3px solid;
+  border:5px red solid;
+  text-align: center;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 20% 20% 20% 20% 20%; 
+  column-gap: 10px;
+  row-gap: 15px;
+  display: grid;
+  text-align: start;
+ background-color: rgb(17, 226, 104);
+ border: red px solid;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.personal-info-form label{
+  font-weight: bold;
+  color: blue;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.personal-info-form input{
+  border: #bbcae7 4px solid;
+  grid-template-rows: end;
+  grid-area: initial;
 }
